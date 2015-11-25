@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE3558391C003C950071CE4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3558381C003C950071CE4C /* AppDelegate.swift */; };
+		BE35583B1C003C950071CE4C /* Level1.sks in Resources */ = {isa = PBXBuildFile; fileRef = BE35583A1C003C950071CE4C /* Level1.sks */; };
+		BE35583F1C003C950071CE4C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35583E1C003C950071CE4C /* GameViewController.swift */; };
+		BE3558421C003C950071CE4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3558401C003C950071CE4C /* Main.storyboard */; };
+		BE3558441C003C950071CE4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE3558431C003C950071CE4C /* Assets.xcassets */; };
+		BE3558471C003C950071CE4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3558451C003C950071CE4C /* LaunchScreen.storyboard */; };
+		BE3558521C003C950071CE4C /* TapOOOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3558511C003C950071CE4C /* TapOOOTests.swift */; };
+		BE35585D1C003C950071CE4C /* TapOOOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35585C1C003C950071CE4C /* TapOOOUITests.swift */; };
+		BE35586C1C0061590071CE4C /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35586B1C0061590071CE4C /* Ball.swift */; };
+		BE35586E1C0070B00071CE4C /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35586D1C0070B00071CE4C /* World.swift */; };
+		BE3558711C007E7C0071CE4C /* MapLevel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3558701C007E7C0071CE4C /* MapLevel1.swift */; };
+		BE3558741C00AB190071CE4C /* XCGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3558731C00AB190071CE4C /* XCGLogger.swift */; };
+		BE3558761C00AB570071CE4C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3558751C00AB570071CE4C /* Constants.swift */; };
+		BE3558791C021A080071CE4C /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3558781C021A080071CE4C /* Path.swift */; };
+		BE35587B1C021A9B0071CE4C /* StraightPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35587A1C021A9B0071CE4C /* StraightPath.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE35584E1C003C950071CE4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE35582D1C003C950071CE4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE3558341C003C950071CE4C;
+			remoteInfo = TapOOO;
+		};
+		BE3558591C003C950071CE4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE35582D1C003C950071CE4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE3558341C003C950071CE4C;
+			remoteInfo = TapOOO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE3558351C003C950071CE4C /* TapOOO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapOOO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE3558381C003C950071CE4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE35583A1C003C950071CE4C /* Level1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level1.sks; sourceTree = "<group>"; };
+		BE35583E1C003C950071CE4C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		BE3558411C003C950071CE4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE3558431C003C950071CE4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE3558461C003C950071CE4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE3558481C003C950071CE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE35584D1C003C950071CE4C /* TapOOOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapOOOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE3558511C003C950071CE4C /* TapOOOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapOOOTests.swift; sourceTree = "<group>"; };
+		BE3558531C003C950071CE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE3558581C003C950071CE4C /* TapOOOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapOOOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE35585C1C003C950071CE4C /* TapOOOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapOOOUITests.swift; sourceTree = "<group>"; };
+		BE35585E1C003C950071CE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE35586B1C0061590071CE4C /* Ball.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
+		BE35586D1C0070B00071CE4C /* World.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
+		BE3558701C007E7C0071CE4C /* MapLevel1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLevel1.swift; sourceTree = "<group>"; };
+		BE3558731C00AB190071CE4C /* XCGLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCGLogger.swift; sourceTree = "<group>"; };
+		BE3558751C00AB570071CE4C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BE3558781C021A080071CE4C /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		BE35587A1C021A9B0071CE4C /* StraightPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StraightPath.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE3558321C003C950071CE4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE35584A1C003C950071CE4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE3558551C003C950071CE4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE35582C1C003C950071CE4C = {
+			isa = PBXGroup;
+			children = (
+				BE3558371C003C950071CE4C /* TapOOO */,
+				BE3558501C003C950071CE4C /* TapOOOTests */,
+				BE35585B1C003C950071CE4C /* TapOOOUITests */,
+				BE3558361C003C950071CE4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE3558361C003C950071CE4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE3558351C003C950071CE4C /* TapOOO.app */,
+				BE35584D1C003C950071CE4C /* TapOOOTests.xctest */,
+				BE3558581C003C950071CE4C /* TapOOOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE3558371C003C950071CE4C /* TapOOO */ = {
+			isa = PBXGroup;
+			children = (
+				BE3558721C00AB0C0071CE4C /* Utilities */,
+				BE35586F1C00723F0071CE4C /* World */,
+				BE35586A1C0061010071CE4C /* Actors */,
+				BE3558381C003C950071CE4C /* AppDelegate.swift */,
+				BE35583E1C003C950071CE4C /* GameViewController.swift */,
+				BE3558401C003C950071CE4C /* Main.storyboard */,
+				BE3558431C003C950071CE4C /* Assets.xcassets */,
+				BE3558451C003C950071CE4C /* LaunchScreen.storyboard */,
+				BE3558481C003C950071CE4C /* Info.plist */,
+			);
+			path = TapOOO;
+			sourceTree = "<group>";
+		};
+		BE3558501C003C950071CE4C /* TapOOOTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE3558511C003C950071CE4C /* TapOOOTests.swift */,
+				BE3558531C003C950071CE4C /* Info.plist */,
+			);
+			path = TapOOOTests;
+			sourceTree = "<group>";
+		};
+		BE35585B1C003C950071CE4C /* TapOOOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE35585C1C003C950071CE4C /* TapOOOUITests.swift */,
+				BE35585E1C003C950071CE4C /* Info.plist */,
+			);
+			path = TapOOOUITests;
+			sourceTree = "<group>";
+		};
+		BE35586A1C0061010071CE4C /* Actors */ = {
+			isa = PBXGroup;
+			children = (
+				BE3558771C0219E70071CE4C /* Map */,
+				BE35586B1C0061590071CE4C /* Ball.swift */,
+			);
+			name = Actors;
+			sourceTree = "<group>";
+		};
+		BE35586F1C00723F0071CE4C /* World */ = {
+			isa = PBXGroup;
+			children = (
+				BE35586D1C0070B00071CE4C /* World.swift */,
+				BE35583A1C003C950071CE4C /* Level1.sks */,
+				BE3558701C007E7C0071CE4C /* MapLevel1.swift */,
+			);
+			name = World;
+			sourceTree = "<group>";
+		};
+		BE3558721C00AB0C0071CE4C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BE3558731C00AB190071CE4C /* XCGLogger.swift */,
+				BE3558751C00AB570071CE4C /* Constants.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		BE3558771C0219E70071CE4C /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				BE3558781C021A080071CE4C /* Path.swift */,
+				BE35587A1C021A9B0071CE4C /* StraightPath.swift */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE3558341C003C950071CE4C /* TapOOO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE3558611C003C950071CE4C /* Build configuration list for PBXNativeTarget "TapOOO" */;
+			buildPhases = (
+				BE3558311C003C950071CE4C /* Sources */,
+				BE3558321C003C950071CE4C /* Frameworks */,
+				BE3558331C003C950071CE4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TapOOO;
+			productName = TapOOO;
+			productReference = BE3558351C003C950071CE4C /* TapOOO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE35584C1C003C950071CE4C /* TapOOOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE3558641C003C950071CE4C /* Build configuration list for PBXNativeTarget "TapOOOTests" */;
+			buildPhases = (
+				BE3558491C003C950071CE4C /* Sources */,
+				BE35584A1C003C950071CE4C /* Frameworks */,
+				BE35584B1C003C950071CE4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE35584F1C003C950071CE4C /* PBXTargetDependency */,
+			);
+			name = TapOOOTests;
+			productName = TapOOOTests;
+			productReference = BE35584D1C003C950071CE4C /* TapOOOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE3558571C003C950071CE4C /* TapOOOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE3558671C003C950071CE4C /* Build configuration list for PBXNativeTarget "TapOOOUITests" */;
+			buildPhases = (
+				BE3558541C003C950071CE4C /* Sources */,
+				BE3558551C003C950071CE4C /* Frameworks */,
+				BE3558561C003C950071CE4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE35585A1C003C950071CE4C /* PBXTargetDependency */,
+			);
+			name = TapOOOUITests;
+			productName = TapOOOUITests;
+			productReference = BE3558581C003C950071CE4C /* TapOOOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE35582D1C003C950071CE4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Moggy Studio";
+				TargetAttributes = {
+					BE3558341C003C950071CE4C = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					BE35584C1C003C950071CE4C = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = BE3558341C003C950071CE4C;
+					};
+					BE3558571C003C950071CE4C = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = BE3558341C003C950071CE4C;
+					};
+				};
+			};
+			buildConfigurationList = BE3558301C003C950071CE4C /* Build configuration list for PBXProject "TapOOO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE35582C1C003C950071CE4C;
+			productRefGroup = BE3558361C003C950071CE4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE3558341C003C950071CE4C /* TapOOO */,
+				BE35584C1C003C950071CE4C /* TapOOOTests */,
+				BE3558571C003C950071CE4C /* TapOOOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE3558331C003C950071CE4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE35583B1C003C950071CE4C /* Level1.sks in Resources */,
+				BE3558471C003C950071CE4C /* LaunchScreen.storyboard in Resources */,
+				BE3558441C003C950071CE4C /* Assets.xcassets in Resources */,
+				BE3558421C003C950071CE4C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE35584B1C003C950071CE4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE3558561C003C950071CE4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE3558311C003C950071CE4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE3558711C007E7C0071CE4C /* MapLevel1.swift in Sources */,
+				BE35587B1C021A9B0071CE4C /* StraightPath.swift in Sources */,
+				BE35586C1C0061590071CE4C /* Ball.swift in Sources */,
+				BE3558791C021A080071CE4C /* Path.swift in Sources */,
+				BE3558741C00AB190071CE4C /* XCGLogger.swift in Sources */,
+				BE35583F1C003C950071CE4C /* GameViewController.swift in Sources */,
+				BE3558761C00AB570071CE4C /* Constants.swift in Sources */,
+				BE3558391C003C950071CE4C /* AppDelegate.swift in Sources */,
+				BE35586E1C0070B00071CE4C /* World.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE3558491C003C950071CE4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE3558521C003C950071CE4C /* TapOOOTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE3558541C003C950071CE4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE35585D1C003C950071CE4C /* TapOOOUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE35584F1C003C950071CE4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE3558341C003C950071CE4C /* TapOOO */;
+			targetProxy = BE35584E1C003C950071CE4C /* PBXContainerItemProxy */;
+		};
+		BE35585A1C003C950071CE4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE3558341C003C950071CE4C /* TapOOO */;
+			targetProxy = BE3558591C003C950071CE4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE3558401C003C950071CE4C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE3558411C003C950071CE4C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE3558451C003C950071CE4C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE3558461C003C950071CE4C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE35585F1C003C950071CE4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE3558601C003C950071CE4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE3558621C003C950071CE4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TapOOO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.moggystudio.TapOOO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BE3558631C003C950071CE4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TapOOO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.moggystudio.TapOOO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BE3558651C003C950071CE4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = TapOOOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.moggystudio.TapOOOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TapOOO.app/TapOOO";
+			};
+			name = Debug;
+		};
+		BE3558661C003C950071CE4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TapOOOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.moggystudio.TapOOOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TapOOO.app/TapOOO";
+			};
+			name = Release;
+		};
+		BE3558681C003C950071CE4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = TapOOOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.moggystudio.TapOOOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TapOOO;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BE3558691C003C950071CE4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TapOOOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.moggystudio.TapOOOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TapOOO;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE3558301C003C950071CE4C /* Build configuration list for PBXProject "TapOOO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE35585F1C003C950071CE4C /* Debug */,
+				BE3558601C003C950071CE4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE3558611C003C950071CE4C /* Build configuration list for PBXNativeTarget "TapOOO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE3558621C003C950071CE4C /* Debug */,
+				BE3558631C003C950071CE4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BE3558641C003C950071CE4C /* Build configuration list for PBXNativeTarget "TapOOOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE3558651C003C950071CE4C /* Debug */,
+				BE3558661C003C950071CE4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BE3558671C003C950071CE4C /* Build configuration list for PBXNativeTarget "TapOOOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE3558681C003C950071CE4C /* Debug */,
+				BE3558691C003C950071CE4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE35582D1C003C950071CE4C /* Project object */;
+}
